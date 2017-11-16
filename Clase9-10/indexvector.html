@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var semana = [50,35,105,40,25];
+		var dias = ["Lunes","Martes","Miercoles","Jueves","Viernes"];
+		var total=0;
+
+		for(var i=0;i<semana.length;i++){
+			if (semana[i]>50) {
+			console.log(dias[i]+": $"+semana[i]);
+		}
+		total += semana[i];
+		}
+		prom=total/semana.length;
+		console.log(total, prom);
+
+	</script>
+</body>
+</html>

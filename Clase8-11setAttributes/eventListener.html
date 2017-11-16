@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Listado</h1>
+	<div>
+		<button name="buscar" id="buscar" > Buscar </button>
+		<button name="limpiar" id="limpiar" > Limpiar </button>
+		<ul id="lista">
+		</ul>
+	</div>
+
+	<script>
+		var listado = ["mate", "café", "harina", "palmitos", "yerba", "mermelada", "cacao", "picadillo"];
+		var botonBuscar = document.getElementById("buscar");
+		var botonLimpiar = document.getElementById("limpiar");
+    	var lista = document.getElementById('lista');
+
+		botonBuscar.addEventListener('click', cargarLista);
+		botonLimpiar.addEventListener('click', limpiarLista);
+
+		function cargarLista() {
+		    for (var i = 0; i < listado.length; i++) {
+	        var li = document.createElement('li');
+   		    li.textContent = listado[i];
+   	   		lista.appendChild(li);
+ 			}
+ 		}
+
+ 		function limpiarLista() {
+ 			for(var i=listado.length-1;i>-1;i--){
+			var li=document.getElementsByTagName('li');
+			lista.removeChild(li[i]);
+			}
+ 		}
+	</script>
+</body>
+</html>

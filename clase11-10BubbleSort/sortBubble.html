@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*sort
+		var numeros = [4,
+          2, 
+          6, 
+          7, 
+          3, 
+          2, 
+          3, 
+          6, 
+          8];
+        console.log(numeros.sort());*/
+
+		// SWAP Metodo burbuja
+		//swap=true corta cuando esta todo ordenado
+		var numeros = [1,2,3];
+		var swap = true;
+		
+		for(var v=0;v<numeros.length&&swap===true;v++){
+				swap=false;
+				for (var i = 0; i < numeros.length-v; i++) {
+					if(numeros[i]>numeros[i+1]){
+						var numTemp = numeros[i];
+						numeros[i]=numeros[i+1];
+						numeros[i+1]=numTemp;
+						swap=true;
+					}
+				console.log(numeros);
+				}
+				}
+				
+				/*1. guardo en un temporal el numero a pisar
+		
+		//2. Piso el primer numero
+		numeros[0]=numeros[1];
+		//3. Piso el segundo numero con la var temp
+		numeros[1]= numTemp;*/
+	</script>
+</body>
+</html>

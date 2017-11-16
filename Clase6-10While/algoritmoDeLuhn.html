@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//2 for, while, parseint, charat, length
+	/*	var num= "36093550156761";
+		var esSegDig = false;
+		var total = 0;
+		for (var i = num.length-1; i >= 0; i--) {
+			var x = parseInt(num.charAt(i));
+			if (esSegDig) {
+				var x = parseInt(num.charAt(i))*2;
+				if (x > 9) {
+					x -= 9;
+				}
+
+				total += x;
+			}else{
+				total += parseInt(num.charAt(i));
+			}
+			esSegDig = !esSegDig;
+		}
+
+		alert(total%10 === 0 ? "bien ahi" : "mala");
+
+
+		for (var i = num.length-1; i >= 0; i--) {
+			var x = parseInt(num.charAt(i));
+			if (esSegDig) {
+				x = x*2;
+				if (x > 9) {
+					x -= 9;
+				}
+			}else{
+				
+			}
+			total += x;
+			esSegDig = !esSegDig;
+		}
+
+		alert(total%10 === 0 ? "bien ahi" : "mala");
+*/
+
+		var numero = prompt("numero");
+
+	function valid_credit_card(numero){
+		var par = false;
+		var resultadoFinal = 0;
+
+		for (var i = numero.length - 1; i >= 0; i--) {
+			var digito = parseInt(numero.charAt(i), 10);
+			if(par){
+				digito = digito*2;
+				
+			}
+	}
+
+	</script>
+</body>
+</html>
