@@ -10,6 +10,9 @@ $('p,a') <----> varios tags
 
 $('p.texto') <----> tag con clase
 
+('p').css({'color':'blue'});
+('div').prop('display',none);
+
 
 EVENTOS
 
@@ -44,4 +47,7 @@ $(document).ready(function(){
 	$('#boton2').click(function(){
 		$('.caja').show();
 	});
+
+	$('div').addClass('caja');
+	$('div').removeClass('caja');
 });

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tabla</title>
+		<script type="text/javascript" src="../jQuery.js"></script>
+		<script type="text/javascript" src="tabla.js"></script>
+		<link rel="stylesheet" href="tabla.css">
+	</head>
+	<body>
+		<table id="registro">
+			<tr>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Edad</th>
+				<th><button id="nuevo">Nuevo registro</button></th>
+			</tr>
+			<tr id="registro_1">
+				<td class="fila1">
+					<input id="name1" class="rg1" type="text" value="Pepe" disabled>
+				</td>
+				<td class="fila1">
+					<input type="text" class="rg1" id="apellido1" value="Pepino" disabled>
+				</td>
+				<td class="fila1">
+					<input type="text" class="rg1" id="edad1" value="28" disabled>
+				</td>
+				<td>
+					<button id="b1" class="boton" data-rg="#registro_1">Borrar fila</button>
+					<button id="e1" class="btnEditar" data-rg=".rg1">Editar fila</button>
+				</td>
+			</tr>
+			<tr id="registro_2">
+				<td><input type="text" id="nombre2" class="rg2" value="Pancho" disabled></td>
+				<td><input type="text" id="apellido2" class="rg2" value="Tevez" disabled></td>
+				<td><input type="text" id="edad2" class="rg2" value="30" disabled></td>
+				<td>
+					<button id="b2" class="boton fila2" data-rg="#registro_2">Borrar fila</button>
+					<button id="e2" class="btnEditar" data-rg=".rg2">Editar fila</button>
+				</td>
+			</tr>
+			<tr id="registro_3">
+				<td><input type="text" id="nombre3" class="rg3" value="Tito" disabled></td>
+				<td><input type="text" id="apellido3" class="rg3" value="Rodriguez" disabled></td>
+				<td><input type="text" id="edad3" class="rg3" value="50" disabled></td>
+				<td>
+					<button id="b3" class="boton fila2" data-rg="#registro_3">Borrar fila</button>
+					<button id="e3" class="btnEditar" data-rg=".rg3">Editar fila</button>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,3 @@
+//JSON
+jdatos={"Nombre":"Pepe","Apellido":"Perez","Edad":"35","Foto":null}
+//		  ^clave  ^valor
